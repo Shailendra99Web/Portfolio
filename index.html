@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&lt;Shailendra/&gt; Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth:wght@400;700&family=Oswald&family=Poppins:wght@400;700&family=Roboto+Mono&family=Signika+Negative:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome (Icon library) -->
+    <script src="https://kit.fontawesome.com/0b925a0b9b.js" crossorigin="anonymous"></script>
+    
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" crossorigin href="assets/index-W22nJD3d.css">
+
+    <style>
+
+        /* font-family: 'Amaranth', sans-serif; */
+        /* font-family: 'Oswald', sans-serif; */
+        /* font-family: 'Poppins', sans-serif; */
+        /* font-family: 'Roboto Mono', monospace; */
+        /* font-family: 'Signika Negative', sans-serif; */
+
+        /* loader CSS (Application opening time spinner) */
+        #loader {
+            border: 12px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 12px solid #444444;
+            width: 70px;
+            height: 70px;
+            animation: spin 1s linear infinite;
+        }
+
+        #start-section{
+            background-image: url('assets/bg-1yiCGGKS.jpg');
+        }
+
+        .work-info-text {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        #navbar {
+            background: rgb(0, 0, 0);
+            background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.577468487394958) 23%, rgba(0,0,0,0.8071603641456583) 48%, rgba(0,0,0,1) 81%);
+            font-family: 'Amaranth', sans-serif;
+        }
+
+        #title{
+            font-family: 'Signika Negative', sans-serif;
+        }
+
+        #aboutWithCode {
+            font-family: 'Roboto Mono', monospace;
+        }
+
+        /* To put a shadow around the project img on hover */
+        .custom-shadow:hover{
+            box-shadow: rgba(0, 0, 0, 0.75) 0px 54px 55px, rgba(0, 0, 0, 0.88) 0px -12px 30px, rgba(0, 0, 0, 0.88) 0px 4px 6px, rgba(0, 0, 0, 0.83) 0px 12px 13px, rgba(0, 0, 0, 0.92) 0px -3px 5px;
+        }
+
+        /* To set project image and right side blur on it */
+        #roven99info-img {
+            background-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 49%, rgba(0, 0, 0, 0.6026785714285714) 77%, rgba(0, 0, 0, 0.865983893557423) 97%), url(assets/R99-GAMING-INFO-xjUOwM2t.jpg);
+        }
+
+        #textUtils-img {
+            background-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 49%, rgba(0, 0, 0, 0.6026785714285714) 77%, rgba(0, 0, 0, 0.865983893557423) 97%), url(assets/TextUtils-AXHOovH0.jpg);
+        }
+
+        #ssv-dance-img {
+            background-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 49%, rgba(0, 0, 0, 0.6026785714285714) 77%, rgba(0, 0, 0, 0.865983893557423) 97%), url(assets/SSV-Dance-Academy-gBvxTu7T.jpg);
+        }
+
+        #mcq-quiz-img {
+            background-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 49%, rgba(0, 0, 0, 0.6026785714285714) 77%, rgba(0, 0, 0, 0.865983893557423) 97%), url(assets/MCQ-Quiz-_8abmrAg.png);
+        }
+
+        #microsoft-img {
+            background-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 49%, rgba(0, 0, 0, 0.6026785714285714) 77%, rgba(0, 0, 0, 0.865983893557423) 97%), url(assets/Microsoft-249Vr3zD.jpg);
+        }
+
+        #inotebook-img {
+            background-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 49%, rgba(0, 0, 0, 0.6026785714285714) 77%, rgba(0, 0, 0, 0.865983893557423) 97%), url(assets/iNotebook-gfA61o8P.jpg);
+        }
+
+        #newscroco-img {
+            background-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 49%, rgba(0, 0, 0, 0.6026785714285714) 77%, rgba(0, 0, 0, 0.865983893557423) 97%), url(assets/NewsCroco-3-rzcrnN.jpg);
+        }
+
+        #ssv-fitness-img {
+            background-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 49%, rgba(0, 0, 0, 0.6026785714285714) 77%, rgba(0, 0, 0, 0.865983893557423) 97%), url(assets/SSV-Fitness-n8odlwpt.jpg);
+        }
+
+        #cinemaki-booking-img {
+            background-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 49%, rgba(0, 0, 0, 0.6026785714285714) 77%, rgba(0, 0, 0, 0.865983893557423) 97%), url(assets/Cinemaki-Booking-LcKTj-Ok.jpg);
+        }
+
+        #roxana-fitness-img {
+            background-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 49%, rgba(0, 0, 0, 0.6026785714285714) 77%, rgba(0, 0, 0, 0.865983893557423) 97%), url(assets/ROXANA-FITNESS-kDI1DRmv.jpg);
+        }
+
+        #grocery-store-img {
+            background-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 49%, rgba(0, 0, 0, 0.6026785714285714) 77%, rgba(0, 0, 0, 0.865983893557423) 97%), url(assets/Grocery-Store-2K3Agg6P.jpg);
+        }
+
+        /* To set color on indentation dots in About Section info code */
+        .dot {
+            color: #3b3553;
+        }
+
+        /* To set color on code numbers in About Section info code */
+        .code-no {
+            color: #3b3553;
+        }
+
+        /* To set background color and transition on footer's 'Get In Touch' button */
+        #get-in-touch-btn{
+            background: linear-gradient(to right, rgba(126,34,206,1) 15%, rgba(0,211,255,1) 40%, rgba(0,255,85,1) 64%, rgba(255,0,56,1) 85%) left;
+            background-size: 500% 100%;
+            transition: all 3s ease;
+        }
+
+        /* To set background color and transition on footer's Get In Touch>'Next' button */
+        #next-btn{
+            background: linear-gradient(to right, rgba(126,34,206,1) 15%, rgba(0,211,255,1) 40%, rgba(0,255,85,1) 64%, rgba(255,0,56,1) 85%) left;
+            background-size: 500% 100%;
+            transition: all 3s ease;
+        }
+
+        #get-in-touch-btn:hover{
+            background-position: right;
+        }
+
+        #next-btn:hover{
+            background-position: right;
+        }
+
+        /* To set input placeholder's text color */
+        /* do not group these rules */
+        *::-moz-placeholder {
+            /* FF 19+ */
+            color: #544a52!important;
+            opacity: 1;
+        }
+        *::placeholder {
+            /* modern browser */
+            color: #544a52!important;
+        }
+
+        /* To set background & text color on selection of texts */
+        *::-moz-selection { 
+            /* Code for Firefox */
+            color: #f3f4f6;
+            background: #7e22ce;
+        }
+
+        *::selection {
+            color: #f3f4f6;
+            background: #7e22ce;
+        }
+
+        /* To disable selection on any element(text, image, etc) */
+        .noselect {
+            -webkit-touch-callout: none; /* iOS Safari */
+            -webkit-user-select: none; /* Safari */ /* Konqueror HTML */
+            -moz-user-select: none; /* Firefox */ /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+
+            /*You just need this if you are only concerned with android and not desktop browsers.*/
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
+
+        /* Loader/ Spinner animation */
+        @keyframes spin {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* To set animation on About Section's ending caret */
+        @keyframes blinking {
+            0% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        /* To make Start Section texts reponsive */
+        @media only screen and (max-width:524px){
+            #start-mid-line{
+                height: 72px;
+            }
+        }
+
+    </style>
+</head>
+
+<body class="bg-gray-700 text-gray-100">
+
+    <!-- Loader (Application opening time spinner) -->
+    <div id="loader" class="absolute top-0 bottom-0 left-0 right-0 m-auto"></div>
+
+    <!-- Navebar -->
+    <nav id="navbar" class="noselect px-4 py-4 w-full fixed top-0 z-10">
+        <div class="pb-4 flex justify-between items-center content-center flex-wrap">
+            <a href="/" class="text-4xl font-bold"><span class="text-purple-600">&lt;</span>Shailendra<span class="text-purple-600">&sol;&gt;</span></a>
+            <ul class="hidden md:flex space-x-4 text-xl">
+                <li class="start hover:cursor-pointer hover:text-slate-300 transition">Start/></li>
+                <li class="work hover:cursor-pointer hover:text-slate-300 transition">Work/></li>
+                <li class="about hover:cursor-pointer hover:text-slate-300 transition">About/></li>
+                <li class="contact hover:cursor-pointer hover:text-slate-300 transition">Contact/></li>
+            </ul>
+            <button id="hamburger" class="d-block md:hidden space-y-1 p-[10px] rounded-sm bg-[#181325]">
+                <div class="h-1 w-8 bg-slate-400"></div>
+                <div class="h-1 w-8 bg-slate-400"></div>
+                <div class="h-1 w-8 bg-slate-400"></div>
+            </button>
+        </div>
+
+        <!-- Navbar for small screen devices   -->
+        <ul id="nav-list" class="flex md:hidden flex-col items-center space-y-4 text-xl max-h-0 overflow-hidden transition-all duration-1000">
+            <li class="start hover:cursor-pointer hover:text-slate-300 transition">Start/></li>
+            <li class="work hover:cursor-pointer hover:text-slate-300 transition">Work/></li>
+            <li class="about hover:cursor-pointer hover:text-slate-300 transition">About/></li>
+            <li class="contact hover:cursor-pointer hover:text-slate-300 transition">Contact/></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Main - Start Section -->
+        <section id="start-section" class="h-screen min-h-[560px] bg-cover bg-center flex flex-col justify-center content-center pt-10">
+            <!-- Start Line (horizontal purple line) -->
+            <div class="bg-purple-700 h-[2px] relative mb-4">
+                <p class="absolute -top-6 text-gray-400 ms-8 font-[Oswald]">&lt;Start&sol;&gt;</p>
+            </div>
+            <div id="title" class="text-center mx-4">
+                <p class="text-4xl md:text-5xl font-bold">Hi, My name is <span class="text-purple-700">Shailendra</span></p>
+                <div class="leading-3"><br></div>
+                <p id="start-mid-line" class="text-3xl md:text-4xl font-bold">I am a passionate <span id="element"></span></p>
+                <div class="leading-3"><br></div>
+                <p class="text-gray-400">Please Scroll down...</p>
+            </div>
+        </section>
+
+        <!-- Main - Work Section -->
+        <section id="work-section" class="pt-12 bg-[#1a1527]">
+            <!-- Work Line (horizontal purple line) -->
+            <div class="bg-purple-700 h-[2px] relative mb-4">
+                <p class="absolute -top-6 text-gray-400 ms-8 font-[Oswald]">&lt;Work&sol;&gt;</p>
+            </div>
+            <p class="text-3xl text-gray-400 font-['Oswald'] ms-24 me-4">Selected design & development projects...</p>
+
+            <div class="pb-14 lg:pb-44 flex flex-col space-y-16 lg:space-y-0">
+                <!-- Project Line 1 -->
+                <div id="project-line-1" class=" flex flex-wrap lg:flex-nowrap mt-12 justify-center lg:justify-stretch space-y-16 lg:space-y-0">
+                    <!-- Project 01. ROVEN99INFO -->
+                    <div class="max-w-full w-[470px] justify-center lg:ms-12 flex flex-nowrap sm:px-0 px-4">
+                        <a href="http://44.211.47.231:2000/" target="_blank" rel="noopener noreferrer" id="roven99info-img" class="block noselect custom-shadow max-w-full w-96 h-52 bg-cover bg-center relative border-2 border-[#1a1527] cursor-pointer transition-all duration-500 lg:mx-0">
+                            <div class="select-text absolute top-1/2 -right-12 text-right work-info-text">
+                                <p class="text-slate-50 mb-2">R99 GAMING INFO</p>
+                                <div class="bg-slate-50 h-[0.15rem] w-36 mb-1"></div>
+                                <p class="text-gray-400">01</p>
+                                <div class="text-gray-400">&larr;</div>
+                            </div>
+                        </a>
+                        <div class="work-info-text-protect bg-transparent w-[50px]"></div>
+                    </div>
+
+                    <!-- Project 02. TextUtils -->
+                    <div class=" max-w-full w-[470px] justify-center relative lg:top-28 lg:ml-auto lg:mr-16 flex flex-nowrap sm:px-0 px-4">
+                        <a href="https://shailendra99web.github.io/TextUtils-React/" target="_blank" rel="noopener noreferrer" id="textUtils-img" class="block noselect custom-shadow max-w-full w-96 h-52 bg-cover bg-center relative border-2 border-[#1a1527] cursor-pointer transition-all duration-500 lg:mx-0">
+                            <div class="select-text absolute top-1/2 -right-12 text-right work-info-text mr-3">
+                                <p class="text-slate-50 mb-2">TextUtils</p>
+                                <div class="bg-slate-50 h-[0.15rem] w-36 mb-1"></div>
+                                <p class="text-gray-400">02</p>
+                                <div class="text-gray-400">&larr;</div>
+                            </div>
+                        </a>
+                        <div class="work-info-text-protect bg-transparent w-[38px]"></div>
+                    </div>
+                </div>
+
+                <!-- Project Line 2 -->
+                <div id="project-line-2" class="flex flex-wrap lg:flex-nowrap  justify-center lg:justify-stretch space-y-16 lg:space-y-0">
+                    <!-- Project 03. SSV Dance Academy -->
+                    <div class=" max-w-full w-[470px] justify-center relative flex flex-nowrap sm:px-0 px-4 lg:mt-28 lg:ml-[15%]">
+                        <div id="ssv-dance-img" class="noselect custom-shadow max-w-full w-96 h-52 bg-cover bg-center relative border-2 border-[#1a1527] cursor-pointer transition-all duration-500 lg:mx-0">
+                            <div class="select-text absolute top-1/2 -right-12 flex flex-col items-end text-right work-info-text">
+                                <p class="text-slate-50 w-24 mb-2">SSV Dance Academy</p>
+                                <div class="bg-slate-50 h-[0.15rem] w-36 mb-1"></div>
+                                <p class="text-gray-400">03</p>
+                                <div class="text-gray-400">&larr;</div>
+                            </div>
+                        </div>
+                        <div class="work-info-text-protect bg-transparent w-[49px]"></div>
+                    </div>
+
+                    <!-- Project 04. MCQ Quiz -->
+                    <div class=" max-w-full w-[470px] justify-center relative flex flex-nowrap sm:px-0 px-4 lg:top-64 lg:mx-8">
+                        <a href="https://shailendra99web.github.io/MCQ-Quiz/" target="_blank" rel="noopener noreferrer" id="mcq-quiz-img" class="block noselect custom-shadow max-w-full w-96 h-52 bg-cover bg-center relative border-2 border-[#1a1527] cursor-pointer transition-all duration-500 lg:mx-0">
+                            <div class="select-text absolute top-1/2 -right-12 text-right work-info-text mr-3">
+                                <p class="text-slate-50 mb-2">MCQ Quiz</p>
+                                <div class="bg-slate-50 h-[0.15rem] w-36 mb-1"></div>
+                                <p class="text-gray-400">04</p>
+                                <div class="text-gray-400">&larr;</div>
+                            </div>
+                        </a>
+                        <div class="work-info-text-protect bg-transparent w-[37px]"></div>
+                    </div>
+                </div>
+
+                <!-- Project Line 3 -->
+                <div id="project-line-3" class="flex flex-wrap lg:flex-nowrap justify-center lg:justify-stretch space-y-16 lg:space-y-0">
+                    <!-- Project 05. Microsoft -->
+                    <div class=" max-w-full w-[470px] justify-center relative flex flex-nowrap sm:px-0 px-4 lg:mt-28 lg:ms-28">
+                        <div id="microsoft-img" class="noselect custom-shadow max-w-full w-96 h-52 bg-cover bg-center relative border-2 border-[#1a1527] cursor-pointer transition-all duration-500 lg:mx-0">
+                            <div class="select-text absolute top-1/2 -right-12 text-right work-info-text">
+                                <p class="text-slate-50 mb-2">Microsoft</p>
+                                <div class="bg-slate-50 h-[0.15rem] w-36 mb-1"></div>
+                                <p class="text-gray-400">05</p>
+                                <div class="text-gray-400">&larr;</div>
+                            </div>
+                        </div>
+                        <div class="work-info-text-protect bg-transparent w-[54px]"></div>
+                    </div>
+
+                    <!-- Project 06. iNotebook -->
+                    <div class="w-64 relative justify-center flex flex-nowrap sm:px-0 px-4 lg:top-64 lg:ml-[20%] lg:mr-8">
+                        <div id="inotebook-img" class="bg-center bg-cover noselect custom-shadow relative h-[312px] w-[181px] border-2 border-[#1a1527] cursor-pointer transition-all duration-500 lg:mx-0">
+                            <div class="select-text absolute top-1/2 -right-12 text-right work-info-text">
+                                <p class="text-slate-50 mb-2">iNotebook</p>
+                                <div class="bg-slate-50 h-[0.15rem] w-36 mb-1"></div>
+                                <p class="text-gray-400">06</p>
+                                <div class="text-gray-400">&larr;</div>
+                            </div>
+                        </div>
+                        <div class="work-info-text-protect bg-transparent w-[49px]"></div>
+                    </div>
+                </div>
+
+                <!-- Project Line 4 -->
+                <div id="project-line-4" class="flex flex-wrap lg:flex-nowrap justify-center lg:justify-stretch space-y-16 lg:space-y-0">
+                    <!-- Project 07. SSV Fitness -->
+                    <div class="max-w-full w-[470px] justify-center relative flex flex-nowrap sm:px-0 px-4 lg:mt-24 lg:ml-[25%]">
+                        <a href="https://shailendra99web.github.io/SSV-FITNESS/" target="_blank" rel="noopener noreferrer" id="ssv-fitness-img" class="block noselect custom-shadow max-w-full w-96 h-52 bg-cover bg-center relative border-2 border-[#1a1527] cursor-pointer transition-all duration-500 lg:mx-0">
+                            <div class="select-text absolute top-1/2 -right-12 text-right work-info-text">
+                                <p class="text-slate-50 mb-2">SSV Fitness</p>
+                                <div class="bg-slate-50 h-[0.15rem] w-36 mb-1"></div>
+                                <p class="text-gray-400">07</p>
+                                <div class="text-gray-400">&larr;</div>
+                            </div>
+                        </a>
+                        <div class="work-info-text-protect bg-transparent w-[49px]"></div>
+                    </div>
+                </div>
+
+                <!-- Project Line 5 -->
+                <div id="project-line-5" class="flex flex-wrap lg:flex-nowrap justify-center lg:justify-stretch space-y-16 lg:space-y-0">
+                    <!-- Project 08. NewsCroco -->
+                    <div class=" max-w-full w-[470px] justify-center relative flex flex-nowrap sm:px-0 px-4 lg:mt-20 lg:ms-14">
+                        <div id="newscroco-img" class="noselect custom-shadow max-w-full w-80 h-48 bg-cover bg-center relative border-2 border-[#1a1527] cursor-pointer transition-all duration-500 lg:mx-0">
+                            <div class="select-text absolute top-1/2 -right-12 text-right work-info-text">
+                                <p class="text-slate-50 mb-2">NewsCroco</p>
+                                <div class="bg-slate-50 h-[0.15rem] w-36 mb-1"></div>
+                                <p class="text-gray-400">08</p>
+                                <div class="text-gray-400">&larr;</div>
+                            </div>
+                        </div>
+                        <div class="work-info-text-protect bg-transparent w-[49px]"></div>
+                    </div>
+
+                    <!-- Project 09. CinemaKi Booking -->
+                    <div class=" max-w-full w-[470px] justify-center relative flex flex-nowrap sm:px-0 px-4 lg:top-32 lg:ml-auto lg:mr-24">
+                        <div id="cinemaki-booking-img" class="noselect custom-shadow max-w-full w-96 h-52 bg-cover bg-center relative border-2 border-[#1a1527] cursor-pointer transition-all duration-500 lg:mx-0">
+                            <div class="select-text absolute top-1/2 -right-12 flex flex-col items-end text-right work-info-text mr-3">
+                                <p class="text-slate-50 w-24 mb-2">CinemaKi Booking</p>
+                                <div class="bg-slate-50 h-[0.15rem] w-36 mb-1"></div>
+                                <p class="text-gray-400">09</p>
+                                <div class="text-gray-400">&larr;</div>
+                            </div>
+                        </div>
+                        <div class="work-info-text-protect bg-transparent w-[37px]"></div>
+                    </div>
+                </div>
+
+                <!-- Project Line 6 -->
+                <div id="project-line-5" class="flex flex-wrap lg:flex-nowrap justify-center lg:justify-stretch space-y-16 lg:space-y-0">
+                    <!-- Project 10. ROXANA FITNESS -->
+                    <div class="max-w-full w-[470px] justify-center relative flex flex-nowrap sm:px-0 px-4 lg:mt-16 lg:ms-auto">
+                        <a href="https://shailendra99web.github.io/ROXANA-FITNESS/" target="_blank" rel="noopener noreferrer" id="roxana-fitness-img" class="block noselect custom-shadow max-w-full w-80 h-48 bg-cover bg-center relative border-2 border-[#1a1527] cursor-pointer transition-all duration-500 lg:mx-0">
+                            <div class="select-text absolute top-1/2 -right-12 text-right work-info-text">
+                                <p class="text-slate-50 mb-2">ROXANA FITNESS</p>
+                                <div class="bg-slate-50 h-[0.15rem] w-36 mb-1"></div>
+                                <p class="text-gray-400">10</p>
+                                <div class="text-gray-400">&larr;</div>
+                            </div>
+                        </a>
+                        <div class="work-info-text-protect bg-transparent w-[49px]"></div>
+                    </div>
+
+                    <!-- Project 11. GROCERY STORE -->
+                    <div class=" max-w-full w-[470px] justify-center relative flex flex-nowrap sm:px-0 px-4 lg:top-44 lg:ml-14 lg:mr-auto">
+                        <a href="https://grocery-store-rosy-ten.vercel.app/" target="_blank" rel="noopener noreferrer" id="grocery-store-img" class="block noselect custom-shadow max-w-full w-96 h-52 bg-cover bg-center relative border-2 border-[#1a1527] cursor-pointer transition-all duration-500 lg:mx-0">
+                            <div class="select-text absolute top-1/2 -right-12 flex flex-col items-end text-right work-info-text mr-3">
+                                <p class="text-slate-50 w-24 mb-2">ROXANA KART</p>
+                                <div class="bg-slate-50 h-[0.15rem] w-36 mb-1"></div>
+                                <p class="text-gray-400">11</p>
+                                <div class="text-gray-400">&larr;</div>
+                            </div>
+                        </a>
+                        <div class="work-info-text-protect bg-transparent w-[37px]"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main - About Section -->
+        <section id="about-section" class="bg-[#14121c] bg-no-repeat bg-cover pt-12">
+            <!-- About Line (horizontal purple line) -->
+            <div class="bg-purple-700 h-[2px] relative">
+                <p class="absolute -top-6 text-gray-400 ms-8 font-[Oswald]">&lt;About&sol;&gt;</p>
+            </div>
+
+            <div id='aboutWithCode' class="pt-8 pb-8">
+                <p class="flex ps-4 sm:ps-[20%] pr-[10%] hover:bg-violet-950"><span class="mr-8 code-no">01</span><span><span class="text-purple-600">class </span> <span class="text-yellow-400">Shailendra Singh Verma</span> {</span></p>
+                <p class="flex ps-4 sm:ps-[20%] pr-[10%] hover:bg-violet-950"><span class="mr-8 code-no">02</span><span class="text-gray-400"><span class="dot">··</span>// I want to be a professional web developer.</span></p>
+                <p class="flex ps-4 sm:ps-[20%] pr-[10%] hover:bg-violet-950"><span class="mr-8 code-no">03</span><span class="text-gray-400"><span class="dot">··</span>// I am constantly broadening my extensive skill set.</span></p>
+                <p class="flex ps-4 sm:ps-[20%] pr-[10%] hover:bg-violet-950"><span class="mr-8 code-no">04</span><span><span class="dot">··</span><span class="text-purple-600">constructor</span>() {</span></p>
+                <p class="flex ps-4 sm:ps-[20%] pr-[10%] hover:bg-violet-950"><span class="mr-8 code-no">05</span><span><span class="dot">····</span><span class="text-red-600">this</span>.<span class="text-emerald-400">name</span> <span class="text-red-600">=</span> <span class="text-[#24e33a]">'Shailendra Singh Verma'</span></span></p>
+                <p class="flex ps-4 sm:ps-[20%] pr-[10%] hover:bg-violet-950"><span class="mr-8 code-no">06</span><span><span class="dot">····</span><span class="text-red-600">this</span>.<span class="text-emerald-400">dateOfBirth</span> <span class="text-red-600">=</span> <span class="text-amber-600">'Feb 14, 2003'</span></span></p>
+                <p class="flex ps-4 sm:ps-[20%] pr-[10%] hover:bg-violet-950"><span class="mr-8 code-no">07</span><span class="overflow-hidden"><span class="dot">····</span><span class="text-red-600">this</span>.<span class="text-emerald-400">email</span> <span class="text-red-600">=</span> <span class="text-[#24e33a] break-words">'shailendraajsingh@gmail.com'</span></span></p>
+                <p class="flex ps-4 sm:ps-[20%] pr-[10%] hover:bg-violet-950"><span class="mr-8 code-no">08</span><span><span class="dot">··</span>}</span></p>
+                <p class="flex ps-4 sm:ps-[20%] pr-[10%] hover:bg-violet-950"><span class="mr-8 code-no">09</span><span><span class="dot">··</span><span class="text-yellow-400">workExperience</span>() {</span></p>
+                <p class="flex ps-4 sm:ps-[20%] pr-[10%] hover:bg-violet-950"><span class="mr-8 code-no">10</span><span><span class="dot">····</span><span class="text-purple-600">return</span><span class="text-emerald-400"> personalProjects =</span> [</span></p>
+                <p class="flex ps-4 sm:ps-[20%] pr-[10%] hover:bg-violet-950"><span class="mr-8 code-no">11</span><span><span class="dot">······</span>{ <span class="text-[#24e33a]">'2022-now'</span> : <span class="text-[#24e33a]">'ROXANA FITNESS, TextUtils, MCQ Quiz, SSV Fitness, CronaVirus, Microsoft Clone /Frontend Developer'</span> }</span></p>
+                <p class="flex ps-4 sm:ps-[20%] pr-[10%] hover:bg-violet-950"><span class="mr-8 code-no">12</span><span><span class="dot">······</span>{ <span class="text-[#24e33a]">'2023-now'</span> : <span class="text-[#24e33a]">'SSV Dance Academy WeChat /Backend Developer'</span> }</span></p>
+                <p class="flex ps-4 sm:ps-[20%] pr-[10%] hover:bg-violet-950"><span class="mr-8 code-no">13</span><span><span class="dot">······</span>{ <span class="text-[#24e33a]">'2023-now'</span> : <span class="text-[#24e33a]">'ROXANA KART, NewsCoco, iNOTEBOOK /Full-stack Developer'</span> }</span></p>
+                <p class="flex ps-4 sm:ps-[20%] pr-[10%] hover:bg-violet-950"><span class="mr-8 code-no">14</span><span><span class="dot">····</span>]</span></p>
+                <p class="flex ps-4 sm:ps-[20%] pr-[10%] hover:bg-violet-950"><span class="mr-8 code-no">15</span><span><span class="dot">··</span>}</span></p>
+                <p class="flex ps-4 sm:ps-[20%] pr-[10%] hover:bg-violet-950"><span class="mr-8 code-no">16</span><span><span class="dot">··</span><span class="text-yellow-400">education</span>() {</span></p>
+                <p class="flex ps-4 sm:ps-[20%] pr-[10%] hover:bg-violet-950"><span class="mr-8 code-no">17</span><span><span class="dot">····</span><span class="text-purple-600">return</span> [</span></p>
+                <p class="flex ps-4 sm:ps-[20%] pr-[10%] hover:bg-violet-950"><span class="mr-8 code-no">18</span><span><span class="dot">······</span><span>{ <span class="text-[#24e33a]">'Nov, 2022 - Apr, 2023'</span> : <span class="text-[#24e33a]">'HTML-CSS-JS, Bootstrap - Apni Kaksha'</span> }</span></p>
+                <p class="flex ps-4 sm:ps-[20%] pr-[10%] hover:bg-violet-950"><span class="mr-8 code-no">19</span><span><span class="dot">······</span><span>{ <span class="text-[#24e33a]">'Jun, 2023 - Jul, 2023'</span> : <span class="text-[#24e33a]">'Node.js, Express, Pug.js, MongoDB, Hosting, Git - CodeWithHarry'</span> }</span></p>
+                <p class="flex ps-4 sm:ps-[20%] pr-[10%] hover:bg-violet-950"><span class="mr-8 code-no">20</span><span><span class="dot">······</span><span>{ <span class="text-[#24e33a]">'Sep, 2023 - Oct,2023'</span> : <span class="text-[#24e33a]">'React, Tailwind CSS - CodeWithHarry'</span> }</span></p>
+                <p class="flex ps-4 sm:ps-[20%] pr-[10%] hover:bg-violet-950"><span class="mr-8 code-no">21</span><span><span class="dot">······</span><span>{ <span class="text-[#24e33a]">'Feb, 2024 - Mar,2024'</span> : <span class="text-[#24e33a]">'React(Revised New version), Next.js (Sigma Web Development Course) - CodeWithHarry'</span> }</span></p>
+                <p class="flex ps-4 sm:ps-[20%] pr-[10%] hover:bg-violet-950"><span class="mr-8 code-no">22</span><span><span class="dot">····</span>]</span></p>
+                <p class="flex ps-4 sm:ps-[20%] pr-[10%] hover:bg-violet-950"><span class="mr-8 code-no">23</span><span><span class="dot">··</span>}</span></p>
+                <p class="flex ps-4 sm:ps-[20%] pr-[10%] hover:bg-violet-950"><span class="mr-8 code-no">24</span><span class="dot">··</span><span class="text-yellow-400">skills</span>() {</p>
+                <p class="flex ps-4 sm:ps-[20%] pr-[10%] hover:bg-violet-950"><span class="mr-8 code-no">25</span><span><span class="dot">····</span><span class="text-purple-600">return</span> [ <span class="text-[#24e33a]">'HTML/CSS/JS', 'SASS', 'Node.js', 'Bootstrap/Tailwind', 'Pug.js', jQuery', 'Express.js', 'React/Next.js', 'AWS', 'Git', 'Responsive', 'MERN Stack', 'RestAPI', 'Strapi', 'MongoDB/PostgredSQL', </span><span class="blinking-caret opacity-0 animate-[blinking_0.8s_linear_infinite]">|</span> ]</span></p>
+                <p class="flex ps-4 sm:ps-[20%] pr-[10%] hover:bg-violet-950"><span class="mr-8 code-no">26</span><span><span class="dot">··</span>}</span></p>
+                <p class="flex ps-4 sm:ps-[20%] pr-[10%] hover:bg-violet-950"><span class="mr-8 code-no">27</span><span>}</span></p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer - Contact Section -->
+    <footer id="contact-section" class="bg-[#0e0d10] pt-12 pb-1">
+        <!-- Contact Line (horizontal purple line) -->
+        <div class="bg-purple-700 h-[2px] relative mb-4">
+            <p class="absolute -top-6 text-gray-400 ms-8 font-[Oswald]">&lt;Contact&sol;&gt;</p>
+        </div>
+
+        <div class="font-[Poppins] mt-44 mb-44 max-w-[60%] mx-auto">
+            <p class="text-xl">Find me on : </p>
+            <div class="select-none flex flex-col sm:flex-row mt-8 mb-12 justify-between space-y-4 sm:space-y-0 ">
+                <div class="flex flex-col space-y-4">
+                    <div class="text-purple-700"><a target = '_blank' href="https://www.facebook.com/profile.php?id=100009364940206"><i class="fa-brands fa-facebook fa-lg mr-3"></i>facebook</a></div>
+                    <div class="text-purple-700"><a href="https://www.freelancer.com/u/Shailu99singh" target="_blank"><i class="fa-solid fa-house-laptop fa-lg mr-3"></i>freelancer</a></div>
+                </div>
+                <div class="flex flex-col space-y-4">
+                    <div class="text-purple-700"><a href="https://github.com/Shailendra99Web" target="_blank"><i class="fa-brands fa-github fa-lg mr-3"></i>github</a></div>
+                    <div class="text-purple-700"><a href="https://www.upwork.com/freelancers/shailendras17" target="_blank"><i class="fa-solid fa-house-laptop fa-lg mr-3"></i>upwork</a></div>
+                </div>
+                <div class="flex flex-col">
+                    <div class="text-purple-700"><a href="https://www.linkedin.com/in/shailendra-singh-437592282/" target="_blank"><i class="fa-brands fa-linkedin-in fa-lg mr-3"></i>in</a></div>
+                </div>
+            </div>
+
+            <div><a id="get-in-touch-btn" class="noselect px-8 py-4 border border-[#0e0d10] rounded-full cursor-pointer">GET IN TOUCH</a></div>
+
+            <div id="get-in-touch" class="bg-[#0e0d10] w-screen h-screen top-0 right-0 fixed z-20 hidden justify-center items-center flex-col space-y-8 font-['Amaranth']">
+                <button id="get-in-touch-close-btn" class="inline-block cursor-pointer absolute top-0 right-0 m-7 p-1"><i class="fa-solid fa-xmark fa-lg"></i></button>
+                <div><p class="text-4xl">Get in touch!</p></div>
+                <div><p id="get-in-touch-text" class="text-2xl step1 p-4">Greetings, I go by <input type="text" placeholder="your name" class="bg-inherit w-28 outline-none focus:decoration-purple-700 transition-all duration-300">, and my email is <input type="email" placeholder="your email" class="bg-inherit w-52 outline-none focus:decoration-purple-700 transition-all duration-300"></p></div>
+                <div><button id="next-btn" class="noselect text-xl px-8 py-4 border border-[#0e0d10] rounded-full cursor-pointer">Next</button></div>
+
+                <span class="absolute text-slate-500 right-0 bottom-0 p-2">*Don't work</span>
+            </div>
+        </div>
+
+        <p class="text-gray-400 text-center font-[Oswald]">Made with <i class="fa-solid fa-heart text-purple-700"></i> by
+            Shailendra. | Reference by <a href="https://yasio.dev/" class="text-purple-700 hover:underline">Yasio.dev</a></p>
+    </footer>
+
+    <!-- To show or not show the Loader (Application opening time Spinner) -->
+    <script>
+        document.onreadystatechange = function () {
+            if (document.readyState !== "complete") {
+                document.querySelector(
+                    "body").style.visibility = "hidden";
+                document.querySelector(
+                    "#loader").style.visibility = "visible";
+            } else {
+                document.querySelector(
+                    "#loader").style.display = "none";
+                document.querySelector(
+                    "body").style.visibility = "visible";
+            }
+        };
+    </script>
+
+    <!-- Type.js CDN -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Type.js setting -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Frontend Developer', 'Backend Developer', 'Fullstack Developer'],
+            typeSpeed: 50,
+        });
+    </script>
+
+    <!-- Main Javascript -->
+    <script type="module" crossorigin src="assets/index-g1BWrVbn.js"></script>
+</body>
+</html>
