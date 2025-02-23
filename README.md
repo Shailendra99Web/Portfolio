@@ -50,6 +50,10 @@ A passionate **Full Stack Web Developer** skilled in crafting scalable, maintain
 Feel free to connect or collaborate! 😊
 
 
+
+*Please do not copy or distribute this project without permission. If you find it helpful, feel free to reference it. Thank you for your understanding!*
+
+
 <!-- [![MasterHead](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFubb1MHVNxM6yyiYV-cTSKxuZSWUckDbS3tQC9qTIF0sDlEHrMfSz7sx_YrUsuAjqbAqhAn_hoogM5BqgRIDjZ3RPZPD7H-3_UurBsnYsPhaEjbE6saFe_K0rKIex_gQT86Qk65tRRKz56xm3L2jzXQtqhofNPaZ2njpvY09eoNSqNceuSpfAYB0_kib9/s16000/git%20pro.png)](https://github.com/Shailendra99Web)
 
 <a href="https://github.com/Shailendra99Web"><img align="center" alt="profile" width="400" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFubb1MHVNxM6yyiYV-cTSKxuZSWUckDbS3tQC9qTIF0sDlEHrMfSz7sx_YrUsuAjqbAqhAn_hoogM5BqgRIDjZ3RPZPD7H-3_UurBsnYsPhaEjbE6saFe_K0rKIex_gQT86Qk65tRRKz56xm3L2jzXQtqhofNPaZ2njpvY09eoNSqNceuSpfAYB0_kib9/s16000/git%20pro.png"></a>
